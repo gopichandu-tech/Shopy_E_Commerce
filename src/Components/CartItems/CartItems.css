@@ -1,0 +1,116 @@
+.cartitems{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cartitems-format-main{
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    padding: 20px 0;
+}
+
+.cartitems-format-details{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px 0;
+}
+
+.carticon-product-icon{
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.cartitems-quantity{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    margin: 30px auto;
+}
+
+.cartitems-price{
+    margin: 30px auto;
+}
+
+.cartitems-remove-icon{
+    width: 30px;
+    height: 30px;
+    margin: 30px auto;
+}
+
+.check-out-button{
+    width: 150px;
+    height: 50px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+@media screen and (max-width : 550px){
+
+    .cartitems-format-main{
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        padding: 20px 0;
+    }
+
+    .cartitems-format-details{
+        display: grid;
+        column-gap: 20px;
+        padding: 20px 0;
+   }
+
+   .carticon-product-icon{
+        width: 50px;
+        height: 50px;
+   }
+
+   .cartitems-quantity,.cartitems-price,.cartitems-remove-icon{
+      margin: 20px auto;
+   }
+
+   
+
+}
+
+@media screen and (max-width : 350px){
+
+    .cartitems-format-main{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 20px 0;
+        font-size: 10px;
+    }
+
+    .cartitems-format-details{
+        display: grid;
+        grid-template-columns: 0.4fr 0.4fr 0.4fr 0.4fr;
+        column-gap: 20px;
+        padding: 20px 0;
+   }
+
+   .carticon-product-icon{
+        width: 20px;
+        height: 20px;
+   }
+
+   .cartitems-quantity{
+        width: 20px;
+        height: 20px;
+        font-size: 15px;
+   }
+
+   .cartitems-remove-icon{
+        width: 20px;
+        height: 20px;
+   }
+
+   .cartitems-quantity,.cartitems-price,.cartitems-remove-icon{
+      margin: 5px auto;
+   }
+
+}

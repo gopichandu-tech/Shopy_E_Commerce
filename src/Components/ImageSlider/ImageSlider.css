@@ -1,0 +1,116 @@
+.imageslider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 90%;
+    height: 400px;
+  }
+
+  .slide {
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 7px #666;
+    width: 90%;
+    height: 100%;
+  }
+
+  .slide-hidden {
+    display: none;
+  }
+
+
+  .arrow {
+    position: relative;
+    filter: drop-shadow(0px 0px 5px #555);
+    width: 20px;
+    height: 20px;
+    color: white;
+  }
+
+  .left-arrow {
+    color: white;
+    left: 8%;
+  }
+
+  .right-arrow {
+    color: white;
+    right: 8%;
+  }
+
+
+
+  .indicators {
+    position: fixed;
+    top: 28rem;
+  }
+
+  .indicator {
+    background-color: white;
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 5px #555;
+    margin: 0 0.2rem;
+    cursor: pointer;
+  }
+  
+
+  @media screen  and (max-width : 780px){
+    .imageslider{
+      width: 95%;
+      height: 80%;
+    }
+
+    .indicators {
+      position: fixed;
+      top: 23rem;
+    }
+    
+  }
+
+  @media screen  and (max-width : 680px){
+
+    .indicators {
+      position: fixed;
+      top: 16rem;
+    }
+    
+  }
+
+  @media screen  and (max-width : 350px){
+    .imageslider{
+      width: 85%;
+      height: 80%;
+    }
+
+    .arrow {
+      position: relative;
+      filter: drop-shadow(0px 0px 5px #555);
+      width: 15px;
+      height: 15px;
+      color: white;
+    }
+    
+  }
+
+  @media screen  and (max-width : 270px){
+    .imageslider{
+      padding: 0 20px;
+      margin: 0 auto;
+      width: 100%;
+      height: 80%;
+    }
+
+    .arrow {
+      position: relative;
+      filter: drop-shadow(0px 0px 5px #555);
+      width: 10px;
+      height: 10px;
+      color: white;
+    }
+    
+  }
