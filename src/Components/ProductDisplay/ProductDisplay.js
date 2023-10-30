@@ -31,8 +31,6 @@ const ProductDisplay = (props) => {
                 <span className='new-price'>${(50 * product.price) / 100}</span> <span className='old-price'>${product.price}</span> <span className='discount'>50% off</span>
                 </div>
             </div>
-            
-
             <div className='productdisplay-avaliable-offers'>
                 <div className='title'>Avaliable Offers</div>
                 <div className='offers'><span id='bank'>Bank Offer</span> 10% off on Kotak Bank Credit Card</div>
