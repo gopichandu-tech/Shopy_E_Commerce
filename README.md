@@ -1,8 +1,8 @@
 # Project Title
-Shopy("../Shopy_E_Commerce/src/Assets/logo.png)
+Shopy(../Shopy_E_Commerce/src/Assets/logo.png)
 
 ## Demo Link
-Access the site [here](https://www.google.com).
+Access the site [here](https://shopy-e-commerce-kappa.vercel.app/).
 
 ## Table of Contents
 
@@ -13,7 +13,6 @@ Access the site [here](https://www.google.com).
 - [Approach](#approach)
 - [Status](#status)
 - [Credits](#credits)
-- [License](#license)
 
 ## About The App
 
@@ -99,17 +98,10 @@ My approach to building this e-commerce website was driven by the goal of creati
 
 ## Status
 
-[Shopy] is mainily a fontend webapplication
-
+[Shopy] forntend part with notable e-commerce features are added.
 ## Credits
 
 List of contributors:
-- [M Gopi Chandu]
+- M Gopi Chandu
 
-Here are some useful resources:
-- [Beginners guide to BEM](https://example-link.com) by [Author Name]
-
-## License
-
-This project is licensed under the MIT License.
 
