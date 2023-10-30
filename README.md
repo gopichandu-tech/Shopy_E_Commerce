@@ -1,6 +1,5 @@
-# Shopy_E_Commerce
 # Project Title
-[Shopy A Online Store]
+Shopy("../Shopy_E_Commerce/src/Assets/logo.png)
 
 ## Demo Link
 Access the site [here](https://www.google.com).
@@ -32,10 +31,8 @@ Access the site [here](https://www.google.com).
 
 ## Screenshots
 
-![Project Screenshot](../Shopy_E_Commerce/src/Assets/structure.png)
-
-Image by Kelly Sikkema
-
+![Structure]("../Shopy_E_Commerce/src/Assets/structure.png")
+![Assets Folder Structure]("../Shopy_E_Commerce/src/Assets/assests_structure.png")
 
 ## Technologies Used
 
@@ -82,7 +79,7 @@ To run the project locally:
 
 - **Wireframing and Design:** Before diving into code, I created wireframes and design mockups to visualize the website's layout and user interface. This step allowed me to plan the user experience and overall design.
 
-- **Component Architecture:** I structured the project using a component-based architecture. Each major feature, such as product listing, cart management, and checkout, was designed as a separate React component for modularity and maintainability and more others.
+- **Component Architecture:** I structured the project using a component-based architecture. Each major feature, such as product listing, cart management, and checkout, productDisplay etc. 16 main folders are made to build the code and other addtional 7 folders are made for hilding the assets like images. Check the folder structure provided in the screenshots section this project  was designed as a separate React component for modularity and maintainability and more others.
 
 - **Data Management:** To handle product data, I fetched information from the Fake Store API and stored it in state variables using React's useState and useEffect hooks. This allowed me to display product information dynamically.
 
