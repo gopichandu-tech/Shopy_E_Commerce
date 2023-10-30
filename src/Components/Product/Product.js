@@ -11,10 +11,11 @@ const Product = () => {
   return (
     <div>
       {product ? ( // Adding a check if 'product' exists
-                <ProductDisplay product={product} />
-            ) : (
-                <p>Product not found</p>
-      )}
+                   <ProductDisplay product={product} />
+                 ) : (
+                   <p>Product not found</p>
+                 )
+      }
       <Trending heading={"Related Products"}/>
     </div>
   )
