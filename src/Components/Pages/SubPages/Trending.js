@@ -17,7 +17,7 @@ const Trending = (props) => {
     },[])
   return (
     <div className='shop-category'>
-        <h4>{props.heading}</h4>
+        <h3>{props.heading}</h3>
       <div className='shopcategory-products'>
            {search.map((item,i)=>{
                 return(

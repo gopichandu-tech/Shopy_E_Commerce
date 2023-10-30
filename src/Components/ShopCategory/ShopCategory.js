@@ -12,7 +12,7 @@ const ShopCategory = (props) => {
     <div className='shop-category'>
       <ImageSlider pages={props.page} />
       <div className='shopcategory-indexSort'>
-         <div>Showing Products</div>
+         <h3>Showing Products</h3>
         <div className='shopcategory-sort'>
           <select value={selectedPrice} onChange={handlePriceChange}>
               <option value={0}>All</option>

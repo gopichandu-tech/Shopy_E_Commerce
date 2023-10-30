@@ -1,8 +1,11 @@
 
 .shopcategory-indexSort{
     display: flex;
-    justify-content: space-around;
-    padding: 20px 0;
+    justify-content: space-between;
+}
+
+.shopcategory-indexSort h3{
+    margin-top: -3px;
 }
 .shopcategory-products{
     display: flex;
