@@ -8,7 +8,7 @@ Access the site [here](https://shopy-e-commerce-kappa.vercel.app/).
 
 - [About The App](#about-the-app)
 - [Screenshots](#screenshots)
-- [Technologies Used](#technologies)
+- [Technologies Used](#technologies-used)
 - [Setup](#setup)
 - [Approach](#approach)
 - [Status](#status)
@@ -30,8 +30,10 @@ Range is a e-commerce website has a user-friendly and visually appealing online 
 
 ## Screenshots
 
-<img src='https://github.com/gopichandu-tech/Shopy_E_Commerce/blob/main/src/Assets/structure.png' width='500' height='500'>
-<img src='https://github.com/gopichandu-tech/Shopy_E_Commerce/blob/main/src/Assets/assests_structure.png' width='500' height='500'>
+<!-- ![Alt FOlder Structure](https://github.com/gopichandu-tech/Shopy_E_Commerce/blob/main/src/Assets/structure.png) -->
+![Alt Assets Folder Structure](https://github.com/gopichandu-tech/Shopy_E_Commerce/blob/main/src/Assets/assests_structure.png)
+<img src='https://github.com/gopichandu-tech/Shopy_E_Commerce/blob/main/src/Assets/structure.png' width='30' height='30'>
+<img src='https://github.com/gopichandu-tech/Shopy_E_Commerce/blob/main/src/Assets/assests_structure.png' width='30' height='30'>
 
 ## Technologies Used
 
@@ -97,7 +99,7 @@ My approach to building this e-commerce website was driven by the goal of creati
 
 ## Status
 
-Shopy forntend part is completed with notable e-commerce added fetures.
+Range forntend part is completed with notable e-commerce added fetures.
 ## Credits
 
 List of contributors:
