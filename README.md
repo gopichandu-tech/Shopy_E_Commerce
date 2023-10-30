@@ -32,7 +32,8 @@ Range is a e-commerce website has a user-friendly and visually appealing online 
 
 <!-- ![Alt FOlder Structure](https://github.com/gopichandu-tech/Shopy_E_Commerce/blob/main/src/Assets/structure.png) -->
 ![Alt Assets Folder Structure](https://github.com/gopichandu-tech/Shopy_E_Commerce/blob/main/src/Assets/assests_structure.png)
-<img src='https://github.com/gopichandu-tech/Shopy_E_Commerce/blob/main/src/Assets/structure.png' width='25'>
+<img src='https://github.com/gopichandu-tech/Shopy_E_Commerce/blob/main/src/Assets/structure.png' width='30' height='30'>
+<img src='https://github.com/gopichandu-tech/Shopy_E_Commerce/blob/main/src/Assets/assests_structure.png' width='30' height='30'>
 
 ## Technologies Used
 
