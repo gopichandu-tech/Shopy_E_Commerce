@@ -2,6 +2,8 @@ import React,{createContext, useState,useEffect} from 'react'
 import all_product from '../Data/all_products';
 export const ShopContext = createContext();
 
+
+
 const ShopContextProvider = (props) => {
 
     /* Fetching all products data  */
@@ -18,15 +20,28 @@ const ShopContextProvider = (props) => {
         fetchApi();
     },[])
 
-    /*Cart Items */
+    
+
+    // const getDefaultCart = () =>{
+    //     const cart = search.map((product, index) => ({
+    //         [index]: 0,
+    //     }));
+    //     const defaultCartObject = Object.assign({}, ...cart);
+    //     return defaultCartObject;
+    // }
+
 
     const getDefaultCart = () =>{
         let cart = {};
         for (let index = 0; index < all_product.length; index++){
             cart[index] = 0;
         }
-        return cart
+        return cart;
     }
+
+    /*Cart Items */
+
+    
     
     const [cartItems,setCartItems] = useState(getDefaultCart());//Using context we can acess any cart item using contex
     
@@ -39,15 +54,29 @@ const ShopContextProvider = (props) => {
     }
 
     const getTotalCartAmount = () =>{
+        // let totalAmount = 0;
+        // for(const item in cartItems){
+        //     if(cartItems[item]>0){
+        //         let itemInfo = all_product.find((product)=>product.id===item)
+        //         console.log(item)
+        //         totalAmount += itemInfo.price / 2 * cartItems[item];
+        //         console.log(totalAmount)
+        //     }
+        //     return totalAmount
+        // }
+
         let totalAmount = 0;
-        for(const item in cartItems){
-            if(cartItems[item]>0){
-                let itemInfo = all_product.find((product)=>product.id===item.id)
-                totalAmount += itemInfo.price * cartItems[item];
-                console.log(totalAmount)
+
+        for (const itemId in cartItems) {
+          if (cartItems[itemId] >= 0) {
+            let itemInfo = search.find((product) => product.id === itemId);
+            if (itemInfo) {
+              totalAmount += (itemInfo.price / 2) * cartItems[itemId];
             }
-            return totalAmount
+          }
         }
+      
+        return totalAmount;
     }
 
     const getTotalCartItems = () =>{
@@ -153,15 +182,27 @@ const ShopContextProvider = (props) => {
     }
 
     /* Sort By  FIlters code */
-    const sortBy = (price) =>{
-        const updateItems = search.filter((item)=>{
-            return item.price > price;
-        })
-        setSearch(updateItems)
-    }
+    const [selectedPrice, setSelectedPrice] = useState(0);
 
+    const sortBy = (price) => {
+        const updateItems = data.filter((item) => {
+            if(price === 50){
+                return item.price / 2 > price
+            }else if (price === 20) {
+                return item.price / 2 < price
+            }  else{
+                return item.price > 0 
+            }
+        });
+        setSearch(updateItems);
+    };
 
-    /*Button Click */
+    const handlePriceChange = (event) => {
+        const price = parseInt(event.target.value);
+        setSelectedPrice(price);
+        sortBy(price);
+    };
+
 
     const contextValue = {
         data,search,all_product,cartItems,addToCart,removeFromCart,getTotalCartAmount,getTotalCartItems,
@@ -170,8 +211,9 @@ const ShopContextProvider = (props) => {
         phonenumber,validatephonenumber,handlePhoneNumber,handlevalidatePoneNumber,
         pincode,validatepincode,handlepincode,handlevalidatePincode,
         signup,setSignUp,handleSignUp,
-        sortBy
+        sortBy,handlePriceChange, selectedPrice
     }
+    console.log(cartItems)
     return (
         <ShopContext.Provider value={contextValue}>
             {props.children}

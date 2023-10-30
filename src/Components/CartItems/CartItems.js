@@ -5,7 +5,7 @@ import { ShopContext } from '../Context/ShopContext'
 import { Link } from 'react-router-dom'
 
 const CartItems = () => {
-    const {getTotalCartAmount,search,data,all_product,cartItems,removeFromCart} = useContext(ShopContext)
+    const {getTotalCartAmount,cartItems,removeFromCart,search} = useContext(ShopContext)
   return (
     <div className='cartitems'>
         <div className='cartitems-format-main'>
@@ -15,7 +15,7 @@ const CartItems = () => {
             <div>Remove</div>
         </div>
         <hr/>
-        {all_product.map((e)=>{
+        {search.map((e)=>{
                 if(cartItems[e.id]>0){//This id is already store or added to cart
                     return (
                         <div>
@@ -23,7 +23,7 @@ const CartItems = () => {
                                 <img src={e.image} className='carticon-product-icon' alt=''/>
                                 <p className='cartitems-quantity'>{cartItems[e.id]}</p>
                                 <p className='cartitems-price'>${(e.price*cartItems[e.id] * 50) / 100}</p>
-                                <img src={into} className='cartitems-remove-icon' onClick={()=>{removeFromCart(e.id)}}/>    
+                                <img src={into} className='cartitems-remove-icon' alt='remove-from-cart' onClick={()=>{removeFromCart(e.id)}}/>    
                             </div>
                             <hr/>
                         </div>

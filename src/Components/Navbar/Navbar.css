@@ -159,6 +159,12 @@
     .nav-bar-menu-signup{
        display: block;
     }
+
+    .nav-bar-menu-signup{
+        background-color: #FF4141;
+        color: #fff;
+        border: 1px solid white;
+    }
     .navbar-signup-cart .signup{
         display: none;
 

@@ -9,7 +9,7 @@ import { ShopContext } from '../Context/ShopContext'
 
 const Navbar = () => {
     const [click,setClick] = useState(true);
-    const {getTotalCartItems,filterRating} = useContext(ShopContext)
+    const {getTotalCartItems} = useContext(ShopContext)
   return (
     <div className='navbar'>
         <img className='display-none' src={click ? hamburger : into} onClick={()=>setClick(!click)} alt='ham-into' />
@@ -22,7 +22,7 @@ const Navbar = () => {
             <div className='menu'><Link to='/womens' className='menu-item' style={{textDecoration : "none"}}>Womens</Link></div>
             <div className='menu'><Link to='/jewellery' className='menu-item' style={{textDecoration : "none"}}>Jewellery</Link></div>
             <div className='menu'><Link to='/electronics' className='menu-item' style={{textDecoration : "none"}}>Electronics</Link></div>
-            <div className='menu menu-item nav-bar-menu-signup' style={{textDecoration : "none"}}>Signup</div>
+            <div className='menu nav-bar-menu-signup'><Link to='/signup' className='menu-item' style={{textDecoration : "none"}}>Signup</Link></div>
 
         </div>
         <div className='navbar-signup-cart'>

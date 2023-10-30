@@ -1,15 +1,14 @@
-import React, { useContext,useState,useEffect } from 'react'
+import React, { useContext} from 'react'
 import './ShopCategory.css'
 import Item from '../Item/Item'
-import sort from '../../Assets/dropdown_icon.png'
-import arrow_up from '../../Assets/arrow-up.png'
-import arrow_down from '../../Assets/arrow-down.png'
+// import sort from '../../Assets/dropdown_icon.png'
+// import arrow_up from '../../Assets/arrow-up.png'
+// import arrow_down from '../../Assets/arrow-down.png'
 import { ShopContext } from '../Context/ShopContext'
 import ImageSlider from '../ImageSlider/ImageSlider'
 
 const ShopCategory = (props) => {
-    const {search,sortBy} = useContext(ShopContext);
-    const [click, setCLick] = useState(true);
+    const {search,selectedPrice,handlePriceChange} = useContext(ShopContext);
     console.log(search)
 
   return (
@@ -18,12 +17,11 @@ const ShopCategory = (props) => {
       <div className='shopcategory-indexSort'>
          <div>Showing Products</div>
         <div className='shopcategory-sort'>
-          Sort by <img src={click ? arrow_down : arrow_up} alt='sort' onClick={()=>setCLick(!click)}/>
-          <div className={click ? 'sort-by-category-hide' : 'sort-by-category-display'}>
-            <div className='category' onClick={()=>sortBy()}>All</div>
-            <div className='category' onClick={()=>sortBy()}>Price Above $50</div>
-            <div className='category' onClick={()=>sortBy()}>Price Below $20</div>
-          </div>
+          <select value={selectedPrice} onChange={handlePriceChange}>
+              <option value={0}>All</option>
+              <option value={50}>Price Above $50</option>
+              <option  value={20}>Sort Below $20</option>
+         </select>
         </div>
       </div>
       <div className='shopcategory-products'>
