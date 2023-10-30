@@ -14,7 +14,7 @@ const Navbar = () => {
     <div className='navbar'>
         <img className='display-none' src={click ? hamburger : into} onClick={()=>setClick(!click)} alt='ham-into' />
         <div className='navbar-logo-title'>
-            <img src={logo} alt='logo' /><div id='title'>Shopy</div>
+            <img src={logo} alt='logo' /><div id='title'>Range</div>
         </div>
         <div className={click ? 'navbar-menu-hide' : 'navbar-menu'}>
             <div className='menu'><Link to='/' className='menu-item' style={{textDecoration : "none"}}>Home</Link></div>

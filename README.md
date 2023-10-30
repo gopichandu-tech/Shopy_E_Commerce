@@ -1,5 +1,5 @@
 # Project Title
-Shopy
+Range
 
 ## Demo Link
 Access the site [here](https://shopy-e-commerce-kappa.vercel.app/).
@@ -16,7 +16,7 @@ Access the site [here](https://shopy-e-commerce-kappa.vercel.app/).
 
 ## About The App
 
-Shopy is a e-commerce website has a user-friendly and visually appealing online shopping platform created using React.js. This website provides a seamless shopping experience for customers looking for a wide range of products. With its intuitive interface and efficient features, users can easily browse, select, and purchase their favorite items.
+Range is a e-commerce website has a user-friendly and visually appealing online shopping platform created using React.js. This website provides a seamless shopping experience for customers looking for a wide range of products. With its intuitive interface and efficient features, users can easily browse, select, and purchase their favorite items.
 
 [Key Features]:
 
@@ -103,5 +103,8 @@ Shopy forntend part is completed with notable e-commerce added fetures.
 
 List of contributors:
 - M Gopi Chandu
+
+# Final Words:
+Thank you for staying with me up to this point. Suggestions and feedbacks are always welcomed.😃
 
 
