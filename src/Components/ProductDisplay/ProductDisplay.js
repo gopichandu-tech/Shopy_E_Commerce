@@ -20,7 +20,6 @@ const ProductDisplay = (props) => {
                 <button className='add-to-cart' onClick={()=>{addToCart(product.id)}}>ADD TO CART</button>
                 <Link to='/buynow'><button className='buy-now' onClick={()=>{addToCart(product.id)}}>BUY NOW</button></Link>
             </div>
-            {/* <div className='productdisplay-img'><img className='productdisplay-main-img' src={product.image} alt=''/></div> */}
         </div>
         <div className='productdisplay-right'>
             <div className='productdisplay-toppart'>

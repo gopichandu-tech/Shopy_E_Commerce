@@ -1,11 +1,9 @@
 import React,{createContext, useState,useEffect} from 'react'
-import all_product from '../Data/all_products';
 export const ShopContext = createContext();
 
 
 
 const ShopContextProvider = (props) => {
-
     /* Fetching all products data  */
     const [data,setData] = useState([]);
     const [search,setSearch] = useState(data);
@@ -20,64 +18,42 @@ const ShopContextProvider = (props) => {
         fetchApi();
     },[])
 
-    
-
-    // const getDefaultCart = () =>{
-    //     const cart = search.map((product, index) => ({
-    //         [index]: 0,
-    //     }));
-    //     const defaultCartObject = Object.assign({}, ...cart);
-    //     return defaultCartObject;
-    // }
-
-
-    const getDefaultCart = () =>{
-        let cart = {};
-        for (let index = 0; index < all_product.length; index++){
-            cart[index] = 0;
-        }
-        return cart;
-    }
-
     /*Cart Items */
+    const [cartItems,setCartItems] = useState({});//Using context we can acess any cart item using contex
 
-    
-    
-    const [cartItems,setCartItems] = useState(getDefaultCart());//Using context we can acess any cart item using contex
-    
-    const addToCart = (itemId) =>{
-        setCartItems((prev_value)=>({...prev_value,[itemId]:prev_value[itemId]+1}))
-    }
+    const addToCart = (itemId) => {
+        setCartItems((prevCartItems) => {
+          const updatedCartItems = { ...prevCartItems };
+          updatedCartItems[itemId] = (updatedCartItems[itemId] || 0) + 1;
+          return updatedCartItems;
+        });
+      }
 
-    const removeFromCart = (itemId) =>{
-        setCartItems((prev_value)=>({...prev_value,[itemId]:prev_value[itemId]-1}))
-    }
+      const removeFromCart = (itemId) => {
+        setCartItems((prevCartItems) => {
+          const updatedCartItems = { ...prevCartItems };
+          if (updatedCartItems[itemId] && updatedCartItems[itemId] > 0) {
+            updatedCartItems[itemId]--;
+            if (updatedCartItems[itemId] === 0) {
+              delete updatedCartItems[itemId];
+            }
+          }
+          return updatedCartItems;
+        });
+      }
 
-    const getTotalCartAmount = () =>{
-        // let totalAmount = 0;
-        // for(const item in cartItems){
-        //     if(cartItems[item]>0){
-        //         let itemInfo = all_product.find((product)=>product.id===item)
-        //         console.log(item)
-        //         totalAmount += itemInfo.price / 2 * cartItems[item];
-        //         console.log(totalAmount)
-        //     }
-        //     return totalAmount
-        // }
-
+    const getTotalCartAmount = () => {
         let totalAmount = 0;
-
         for (const itemId in cartItems) {
-          if (cartItems[itemId] >= 0) {
-            let itemInfo = search.find((product) => product.id === itemId);
+          if (cartItems[itemId] > 0) {
+            const itemInfo = search.find((product) => product.id === itemId);
             if (itemInfo) {
-              totalAmount += (itemInfo.price / 2) * cartItems[itemId];
+              totalAmount += (itemInfo.price * cartItems[itemId]);
             }
           }
         }
-      
         return totalAmount;
-    }
+      }
 
     const getTotalCartItems = () =>{
         let totalItem = 0;
@@ -205,7 +181,7 @@ const ShopContextProvider = (props) => {
 
 
     const contextValue = {
-        data,search,all_product,cartItems,addToCart,removeFromCart,getTotalCartAmount,getTotalCartItems,
+        data,search,cartItems,addToCart,removeFromCart,getTotalCartAmount,getTotalCartItems,
         handleEmail,handleUserName,handleEnterPassword,handleClick,
         click,validateusername,validateemail,validatepassword,
         phonenumber,validatephonenumber,handlePhoneNumber,handlevalidatePoneNumber,

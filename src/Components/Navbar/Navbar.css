@@ -156,6 +156,10 @@
         display: flex;
         margin-right: 40px;
     } 
+
+    .navbar-logo-title #title{
+        margin-bottom: 10px;
+    }
     .nav-bar-menu-signup{
        display: block;
     }

@@ -38,10 +38,10 @@ const CartItems = () => {
                     <hr/>
                 </div>
                 <div className='cartitems-total-items'>
-                    <p>Total Amount : ${getTotalCartAmount()}</p>
+                    <p>Total Amount :$ {getTotalCartAmount()}</p>
                     <hr/>
                 </div>
-                <Link to='/buynow'><button className='check-out-button'>PROCEED TO CHECKOUT</button></Link>      
+                {Object.keys(cartItems).length === 0 ? <div><p>Empty Cart</p><button className='check-out-button' disabled>PROCEED TO CHECKOUT</button></div> : <div><Link to='/buynow'><button className='check-out-button'>PROCEED TO CHECKOUT</button></Link></div> }      
             </div>
     </div>
   )

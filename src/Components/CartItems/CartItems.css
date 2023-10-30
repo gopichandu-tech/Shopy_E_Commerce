@@ -46,6 +46,7 @@
     height: 50px;
     padding: 5px;
     font-size: 15px;
+    margin-bottom: 130%;
 }
 
 @media screen and (max-width : 550px){

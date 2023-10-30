@@ -5,12 +5,16 @@ import ProductDisplay from '../ProductDisplay/ProductDisplay'
 import Trending from '../Pages/SubPages/Trending'
 
 const Product = () => {
-    const {all_product} = useContext(ShopContext);
+    const {search} = useContext(ShopContext);
     const {productId} = useParams();
-    const product = all_product.find((e)=>e.id === Number(productId))
+    const product = search.find((e)=>e.id === Number(productId))
   return (
     <div>
-      <ProductDisplay product={product} />
+      {product ? ( // Adding a check if 'product' exists
+                <ProductDisplay product={product} />
+            ) : (
+                <p>Product not found</p>
+      )}
       <Trending heading={"Related Products"}/>
     </div>
   )

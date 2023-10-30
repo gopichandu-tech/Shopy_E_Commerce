@@ -1,9 +1,6 @@
 import React, { useContext} from 'react'
 import './ShopCategory.css'
 import Item from '../Item/Item'
-// import sort from '../../Assets/dropdown_icon.png'
-// import arrow_up from '../../Assets/arrow-up.png'
-// import arrow_down from '../../Assets/arrow-down.png'
 import { ShopContext } from '../Context/ShopContext'
 import ImageSlider from '../ImageSlider/ImageSlider'
 
