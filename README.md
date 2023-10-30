@@ -99,7 +99,7 @@ My approach to building this e-commerce website was driven by the goal of creati
 
 ## Status
 
-Shopy forntend part is completed with notable e-commerce added fetures.
+Range forntend part is completed with notable e-commerce added fetures.
 ## Credits
 
 List of contributors:
