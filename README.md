@@ -8,7 +8,7 @@ Access the site [here](https://shopy-e-commerce-kappa.vercel.app/).
 
 - [About The App](#about-the-app)
 - [Screenshots](#screenshots)
-- [Technologies Used](#technologies)
+- [Technologies Used](#technologies-used)
 - [Setup](#setup)
 - [Approach](#approach)
 - [Status](#status)
