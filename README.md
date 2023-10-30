@@ -1,5 +1,5 @@
 # Project Title
-Shopy(../Shopy_E_Commerce/src/Assets/logo.png)
+Shopy
 
 ## Demo Link
 Access the site [here](https://shopy-e-commerce-kappa.vercel.app/).
@@ -16,7 +16,7 @@ Access the site [here](https://shopy-e-commerce-kappa.vercel.app/).
 
 ## About The App
 
-[Shopy] is a e-commerce website has a user-friendly and visually appealing online shopping platform created using React.js. This website provides a seamless shopping experience for customers looking for a wide range of products. With its intuitive interface and efficient features, users can easily browse, select, and purchase their favorite items.
+Shopy is a e-commerce website has a user-friendly and visually appealing online shopping platform created using React.js. This website provides a seamless shopping experience for customers looking for a wide range of products. With its intuitive interface and efficient features, users can easily browse, select, and purchase their favorite items.
 
 [Key Features]:
 
@@ -30,8 +30,8 @@ Access the site [here](https://shopy-e-commerce-kappa.vercel.app/).
 
 ## Screenshots
 
-![Structure]("../Shopy_E_Commerce/src/Assets/structure.png")
-![Assets Folder Structure]("../Shopy_E_Commerce/src/Assets/assests_structure.png")
+![Alt FOlder Structure](../Shopy_E_Commerce/src/Assets/structure.png)
+![Alt Assets Folder Structure](../Shopy_E_Commerce/src/Assets/assests_structure.png)
 
 ## Technologies Used
 
@@ -98,7 +98,7 @@ My approach to building this e-commerce website was driven by the goal of creati
 
 ## Status
 
-[Shopy] forntend part with notable e-commerce features are added.
+Shopy forntend part is completed with notable e-commerce added fetures.
 ## Credits
 
 List of contributors:
