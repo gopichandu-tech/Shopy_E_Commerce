@@ -30,10 +30,8 @@ Range is a e-commerce website has a user-friendly and visually appealing online 
 
 ## Screenshots
 
-<!-- ![Alt FOlder Structure](https://github.com/gopichandu-tech/Shopy_E_Commerce/blob/main/src/Assets/structure.png) -->
-![Alt Assets Folder Structure](https://github.com/gopichandu-tech/Shopy_E_Commerce/blob/main/src/Assets/assests_structure.png)
-<img src='https://github.com/gopichandu-tech/Shopy_E_Commerce/blob/main/src/Assets/structure.png' width='30' height='30'>
-<img src='https://github.com/gopichandu-tech/Shopy_E_Commerce/blob/main/src/Assets/assests_structure.png' width='30' height='30'>
+<img src='https://github.com/gopichandu-tech/Shopy_E_Commerce/blob/main/src/Assets/structure.png' width='500' height='500'>
+<img src='https://github.com/gopichandu-tech/Shopy_E_Commerce/blob/main/src/Assets/assests_structure.png' width='500' height='500'>
 
 ## Technologies Used
 
@@ -70,7 +68,6 @@ To run the project locally:
 
 1. Download or clone the repository.
 2. Run `npm install` to install dependencies.
-3. [Add other setup instructions, if needed]
 
 ## Approach
 
