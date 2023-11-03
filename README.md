@@ -92,7 +92,7 @@ To run the project locally:
 
 - **Sorting and Filtering:** I enabled users to sort and filter products based on price and category. Users can easily find the products they're interested in.
 
-- **Future Improvements:** As of the current project status, [mention the project's status], I plan to continue improving the website. Some future enhancements include [list upcoming features or updates].
+- **Future Improvements:** As of the current project status, I plan to continue improving the website.
 
 My approach to building this e-commerce website was driven by the goal of creating an engaging and user-friendly platform for online shopping. React.js and the selected technologies allowed me to develop a dynamic and responsive application that caters to the needs of modern e-commerce customers.
 
